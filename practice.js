@@ -53,3 +53,16 @@ function sumAndProduct(num1, num2){
 }
 sumAndProduct(2,4)
 //I could use return inside of double console but unfortunately, you cannot have two return in a function.
+
+//challenge Five 
+//we are going to create a computerized rock,paper, and scissors in which the code would genereate a random answer between the three
+
+let game = ["rock","paper","scissors"]
+
+//we are going to create a function that would enable the random pick
+function random(){
+    let random = Math.floor(Math.random() * 3)//this would generate a random number from 0 - 2, and note in our game, the maximum index number is 2.
+    //now that we have generated random number from 0 - 2, we can now link it to our game variable so it can provide us our random item.
+    console.log(game[random]) 
+}
+random()
